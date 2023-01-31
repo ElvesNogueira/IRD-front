@@ -1,10 +1,16 @@
-import {BrowserRouter} from 'react-router-dom';
-import RoutesApp from './routes';
+import { BrowserRouter } from "react-router-dom";
+import RoutesApp from "./routes";
+import React from "react";
 
-export default function App(){
-  return(<div>
+import Header from "./components/Header";
+
+export default function App() {
+  return (
+    <div>
       <BrowserRouter>
-        <RoutesApp/>
+        <Header />
+        <RoutesApp />
       </BrowserRouter>
-    </div>)
+    </div>
+  );
 }
